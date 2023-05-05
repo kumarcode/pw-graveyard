@@ -1,8 +1,10 @@
 import { Page } from '@playwright/test';
 
 export default class SearchResultsPage{
-    constructor(public page: Page){
+    page: Page;
 
+    constructor(page: Page){
+        this.page = page;
     }
 
     async getPageUrl(){

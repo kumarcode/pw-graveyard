@@ -71,9 +71,12 @@
           "column": 6,
           "specs": [
             {
-              "title": "Check Marketplace item search directs user to Marketplace",
+              "title": "Check Marketplace item search directs user to Marketplace @regression @general",
               "ok": true,
-              "tags": [],
+              "tags": [
+                "regression",
+                "general"
+              ],
               "tests": [
                 {
                   "timeout": 30000,
@@ -85,19 +88,19 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6891,
+                      "duration": 5902,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-05-04T02:07:39.852Z",
+                      "startTime": "2023-05-05T02:16:51.234Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "bde9625c14fa4f3b8ab5-de53de9c6884ad544a76",
+              "id": "bde9625c14fa4f3b8ab5-b55a353ba54340e3acfd",
               "file": "trademeGeneral.test.ts",
               "line": 5,
               "column": 9
@@ -120,9 +123,12 @@
           "column": 6,
           "specs": [
             {
-              "title": "Check if the property search result has Featured Listing at the top",
+              "title": "Check if the property search result has Featured Listing at the top @regression @property",
               "ok": true,
-              "tags": [],
+              "tags": [
+                "regression",
+                "property"
+              ],
               "tests": [
                 {
                   "timeout": 30000,
@@ -134,19 +140,19 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5420,
+                      "duration": 6426,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-05-04T02:07:47.883Z",
+                      "startTime": "2023-05-05T02:16:57.751Z",
                       "attachments": []
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "64259a0dda5423d1b22e-802490c4d88479c77be8",
+              "id": "64259a0dda5423d1b22e-9605e12213aea89a567c",
               "file": "trademeProperty.test.ts",
               "line": 5,
               "column": 9

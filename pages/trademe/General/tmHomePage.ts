@@ -1,19 +1,27 @@
 import { Page } from '@playwright/test';
 
 export default class HomePage{
-    constructor(public page: Page){
+    page: Page;
 
+    constructor(page: Page){
+        this.page = page;
     }
+
+    searchTextbox = () => this.page.locator("input[id='search']");
+    searchButton = () => this.page.locator("button[aria-label='Search all of Trade Me']");
+    propertyTab = () => this.page.getByText("Property").nth(0);
+
+
 
     async enterSearchValue(searchValue: string){
         this.page.waitForLoadState('load');
-        await this.page.locator("input[id='search']").type(searchValue);
+        await this.searchTextbox().type(searchValue);
     }
 
     async clickSearch(){
         await Promise.all([
             this.page.waitForLoadState('load'),
-            await this.page.click("button[aria-label='Search all of Trade Me']"),
+            await this.searchButton().click(),
             this.page.waitForTimeout(2000)
         ])
     }
@@ -21,7 +29,7 @@ export default class HomePage{
     async clickProperty(){
         await Promise.all([
             this.page.waitForLoadState('networkidle'),
-            await this.page.getByText("Property").nth(0).click()
+            await this.propertyTab().click()
         ])
     }
 
