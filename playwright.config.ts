@@ -1,19 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
- * See https://playwright.dev/docs/test-configuration.
- */
 export default defineConfig({
   testDir: './testsuite',
   /* Run tests in files in parallel */
   fullyParallel: false,
-    /* Retry on CI only */
   retries: 2,
   /* Opt out of parallel tests on CI. */
   workers: 1,
@@ -27,16 +17,22 @@ export default defineConfig({
       open: "always"
     }]
   ],
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
-  use: {
+   // Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions.
+   use: {
+    // Set the base URL to use for all the tests.
     baseURL: "https://www.trademe.co.nz",
-    headless: false,
-    screenshot: "only-on-failure",
-    video: "retain-on-failure",
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    // Set whether to run the tests in headless mode or not.
+    headless: false,
+
+    // Set when to take a screenshot during test failures.
+    screenshot: "only-on-failure",
+
+    // Set when to capture a video of the test run during failures.
+    video: "retain-on-failure",
+
+    // Set to collect the trace when retrying a failed test.
+    // For more information about trace viewer, see https://playwright.dev/docs/trace-viewer.
     trace: 'on-first-retry',
   },
 

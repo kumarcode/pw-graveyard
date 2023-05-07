@@ -1,13 +1,13 @@
 {
   "name": "pw-graveyard",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate boilerplate repo helps your team get up and running quickly with testing and ensures that your tests are maintainable and reliable over time.",
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Kumaravel Karthikeyan",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.32.3"

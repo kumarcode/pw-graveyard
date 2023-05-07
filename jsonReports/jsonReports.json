@@ -67,7 +67,7 @@
         {
           "title": "Trade Me General Test Suite",
           "file": "trademeGeneral.test.ts",
-          "line": 4,
+          "line": 7,
           "column": 6,
           "specs": [
             {
@@ -88,12 +88,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5902,
+                      "duration": 5335,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-05-05T02:16:51.234Z",
+                      "startTime": "2023-05-07T10:12:40.268Z",
                       "attachments": []
                     }
                   ],
@@ -102,7 +102,7 @@
               ],
               "id": "bde9625c14fa4f3b8ab5-b55a353ba54340e3acfd",
               "file": "trademeGeneral.test.ts",
-              "line": 5,
+              "line": 9,
               "column": 9
             }
           ]
@@ -119,7 +119,7 @@
         {
           "title": "Trade Me Property Test Suite",
           "file": "trademeProperty.test.ts",
-          "line": 4,
+          "line": 8,
           "column": 6,
           "specs": [
             {
@@ -140,12 +140,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 6426,
+                      "duration": 5941,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-05-05T02:16:57.751Z",
+                      "startTime": "2023-05-07T10:12:46.142Z",
                       "attachments": []
                     }
                   ],
@@ -154,7 +154,7 @@
               ],
               "id": "64259a0dda5423d1b22e-9605e12213aea89a567c",
               "file": "trademeProperty.test.ts",
-              "line": 5,
+              "line": 10,
               "column": 9
             }
           ]

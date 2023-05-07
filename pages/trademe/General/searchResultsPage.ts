@@ -1,19 +1,24 @@
+// Import the Page type from Playwright
 import { Page } from '@playwright/test';
+import { Helper } from '../../../utilities/helper';
 
-export default class SearchResultsPage{
+// Define the SearchResultsPage class
+export default class SearchResultsPage {
+    // Define a page property of type Page
     page: Page;
 
-    constructor(page: Page){
+    // Define a constructor that takes a Page object as an argument
+    constructor(page: Page) {
         this.page = page;
     }
 
-    async getPageUrl(){
-        this.page.waitForLoadState('load');
-        return this.page.url().toString();
+    // Define a getSearchPageUrl method that calls the static getPageUrl method of the Helper class to get the page URL
+    async getSearchPageUrl(): Promise<string> {
+        return Helper.getPageUrl(this.page);
     }
 
-    async getPageTitle(){
-        this.page.waitForLoadState('load');
-        return (await this.page.title()).toString();
+    // Define a getSearchPageTitle method that calls the static getPageTitle method of the Helper class to get the page title
+    async getSearchPageTitle(): Promise<string> {
+        return Helper.getPageTitle(this.page);
     }
 }
