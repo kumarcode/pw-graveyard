@@ -88,12 +88,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5335,
+                      "duration": 5694,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-05-07T10:12:40.268Z",
+                      "startTime": "2023-05-07T10:23:33.614Z",
                       "attachments": []
                     }
                   ],
@@ -139,17 +139,60 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 5941,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 30009,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Kumar\\Playground\\pw-graveyard\\pages\\trademe\\General\\tmHomePage.ts",
+                            "column": 23,
+                            "line": 50
+                          },
+                          "message": "Error: page.waitForLoadState: Navigation failed because page was closed!\n\n\u001b[90m   at \u001b[39m..\\pages\\trademe\\General\\tmHomePage.ts:50\n\n\u001b[0m \u001b[90m 48 |\u001b[39m     \u001b[36masync\u001b[39m clickProperty() {\u001b[0m\n\u001b[0m \u001b[90m 49 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m.\u001b[39mall([\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 50 |\u001b[39m             \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForLoadState(\u001b[32m'networkidle'\u001b[39m)\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m             \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpropertyTab()\u001b[33m.\u001b[39mclick()\u001b[0m\n\u001b[0m \u001b[90m 52 |\u001b[39m         ])\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m     }\u001b[0m\n\n\u001b[2m    at HomePage.clickProperty (C:\\Kumar\\Playground\\pw-graveyard\\pages\\trademe\\General\\tmHomePage.ts:50:23)\u001b[22m\n\u001b[2m    at C:\\Kumar\\Playground\\pw-graveyard\\testsuite\\trademeProperty.test.ts:14:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2023-05-07T10:12:46.142Z",
-                      "attachments": []
+                      "startTime": "2023-05-07T10:23:39.866Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Kumar\\Playground\\pw-graveyard\\test-results\\trademeProperty-Trade-Me-Property-Test-Suite-C-cdabb-Featured-Listing-at-the-top-regression-property\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Kumar\\Playground\\pw-graveyard\\test-results\\trademeProperty-Trade-Me-Property-Test-Suite-C-cdabb-Featured-Listing-at-the-top-regression-property\\test-failed-1.png"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 7698,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2023-05-07T10:24:12.334Z",
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Kumar\\Playground\\pw-graveyard\\test-results\\trademeProperty-Trade-Me-Property-Test-Suite-C-cdabb-Featured-Listing-at-the-top-regression-property-retry1\\trace.zip"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "64259a0dda5423d1b22e-9605e12213aea89a567c",

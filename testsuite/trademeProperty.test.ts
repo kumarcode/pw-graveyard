@@ -8,8 +8,8 @@ import * as data from '../testdata/trademeProperty-test-data.json'
 test.describe("Trade Me Property Test Suite", async () => {
     // define a test case, tagged with @regression and @general
     test("Check if the property search result has Featured Listing at the top @regression @property", async ({ page, baseURL, homePage, propertyHomePage }) => {
-        // Navigate to the base URL
-        await page.goto('/');
+        // Navigate to Trade Me home page
+        await homePage.gotoTradeMeHomePage();
         // Click the Property tab on the home page
         await homePage.clickProperty();
         // Click the Search button on the Property page

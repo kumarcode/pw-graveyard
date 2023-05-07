@@ -7,8 +7,8 @@ import * as data from '../testdata/trademeGeneral-test-data.json'
 test.describe("Trade Me General Test Suite", async () => {
     // define a test case, tagged with @regression and @general
     test('Check Marketplace item search directs user to Marketplace @regression @general', async ({ page, baseURL, homePage, searchResultsPage }) => {
-        // navigate to the Trade Me website's home page
-        await page.goto('/');
+        // navigate to the Trade Me home page
+        await homePage.gotoTradeMeHomePage();
         // enter a search value for a Marketplace item on the home page
         await homePage.enterSearchValue(data.genericSearchMarketplaceItem);
         // click on the search button to search for the Marketplace item
