@@ -1,4 +1,4 @@
-# Playwright Playground
+# Playwright Graveyard
 
 Playwright Graveyard is a boilerplate for UI automation using Playwright that teams can use to quickly set up the framework, build on top of it, or use it to learn and practice Playwright. It also contains sample tests.
 
