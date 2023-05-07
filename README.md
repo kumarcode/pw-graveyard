@@ -17,7 +17,7 @@ To use this project, you will need to have the following installed on your syste
 
 ## Getting Started
 
-1. Clone this repository: `git clone https://github.com/kumarcode/pw-graveyard.git`
+1. Clone this repository: `git clone https://github.com/kumarcode/pw-playground.git`
 2. Install the dependencies: `npm install`
 3. Run the tests: `npm test`
 
