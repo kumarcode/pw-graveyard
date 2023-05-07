@@ -4,10 +4,10 @@ Playwright Graveyard is a boilerplate for UI automation using Playwright that te
 
 ## Features
 
-- Preconfigured project structure and files
-- Utilities and helpers to simplify testing
-- Example tests for quick start
-- Easy customization for your project
+- Preconfigured project structure with sample tests
+- Page Object Model and test data segregation support
+- Built-in utilities and helpers for simplified testing
+- Customizable configuration with support for reporting, tagging, retries, and more.
 
 ## Prerequisites
 To use this project, you will need to have the following installed on your system:
