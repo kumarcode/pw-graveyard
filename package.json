@@ -4,12 +4,14 @@
   "description": "This is a boilerplate boilerplate repo helps your team get up and running quickly with testing and ensures that your tests are maintainable and reliable over time.",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test"
+    "test": "cucumber-js test"
   },
   "keywords": [],
   "author": "Kumaravel Karthikeyan",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.32.3"
+    "@cucumber/cucumber": "^9.1.2",
+    "@playwright/test": "^1.32.3",
+    "ts-node": "^10.9.1"
   }
 }
