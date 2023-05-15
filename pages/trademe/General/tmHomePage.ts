@@ -46,7 +46,7 @@ export default class HomePage {
     }
 
     // This method navigates to the Trade Me home page
-    async gotoTradeMeHomePage() {
+    async gotoTradeMeHomePage(): Promise<void> {
         // Wait for the page to finish loading before navigating to the baseURL
         await this.page.goto('/');
     }
