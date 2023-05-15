@@ -20,12 +20,6 @@ export default class HomePage {
     // Define a propertyTab method that returns a locator for the Property tab element
     propertyTab = () => this.page.getByText("Property").nth(0);
 
-    // This method navigates to the Trade Me home page
-    async gotoTradeMeHomePage() {
-        // Wait for the page to finish loading before navigating to the baseURL
-        await this.page.goto('/');
-    }
-
     // Define an enterSearchValue method that enters a search value in the search textbox
     async enterSearchValue(searchValue: string) {
         // Wait for the page to finish loading
@@ -49,5 +43,11 @@ export default class HomePage {
             this.page.waitForLoadState('networkidle'),
             await this.propertyTab().click()
         ]);
+    }
+
+    // This method navigates to the Trade Me home page
+    async gotoTradeMeHomePage() {
+        // Wait for the page to finish loading before navigating to the baseURL
+        await this.page.goto('/');
     }
 }
